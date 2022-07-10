@@ -37,13 +37,6 @@ accuracy = gnb.score(X_test, y_test)
 print(accuracy)
 
 
-
-# Feature scaling
-#sc = StandardScaler()
-#X_train = sc.fit_transform(X_train)
-#X_test= sc.transform(X_test)
-
-
 # pkl export & finish log
 pickle.dump(gnb, open("model.pkl", "wb"))
 logging.debug(' Execution of Model.py is finished ')
