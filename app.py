@@ -5,7 +5,7 @@ import warnings
 warnings.simplefilter("ignore", UserWarning)
 
 # Create flask app
-flask_app = Flask(__name__)
+app = Flask(__name__)
 model = pickle.load(open("model.pkl", "rb"))
 
 
@@ -28,4 +28,4 @@ def predict():
     return render_template("Result.html", prediction_text = prediction)
 
 if __name__ == "__main__":
-    flask_app.run(debug=True)
+    app.run(debug=True)
