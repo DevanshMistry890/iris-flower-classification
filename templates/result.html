@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flower Class Prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Iris Flower class Prediction">
+<meta name="author" content="Devansh">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/neumorphism.css') }}">
+<link rel="javascript" href="{{ url_for('static', filename='js/neumorphism.js') }}">
+</head> 
+<body>
+    <main>        
+        <section class="container-fluid py-3">
+            <div class="row justify-content-md-around">
+				<div class="col-12 col-lg-6">
+                <div class="card bg-primary shadow-inset border-light p-3">
+                    <!-- Content -->
+                    <div class="card-body shadow-soft border border-light rounded p-4">
+					<center>
+                        <h4 class="mb-3">Flower Species is</h4>
+                        <span class="price display-2 mb-0" style="color: blue;font-weight: bold;">{{ prediction_text }}</span>
+						<br>
+                        <a href="{{url_for('Home')}}">
+                        <button type="button" class="btn btn-primary btn-block rounded-bottom">Return</button>
+                        </a>
+						</center>
+                    </div>
+                    <!-- End Content -->
+                </div>
+				</div>
+			</div>
+		</section>
+	</main>
+<footer style="position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 3;
+    color: #44476A;
+    font-weight: 400;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 2.5;
+    box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;">
+    Project is made By Devansh Mistry
+</footer>
+</body>
+</html>
