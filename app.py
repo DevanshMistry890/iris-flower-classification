@@ -25,7 +25,7 @@ def predict():
     float_features = [float(x) for x in request.form.values()]
     to_predict_list = list(float_features)
     prediction = ValuePredictor(to_predict_list)
-    return render_template("Result.html", prediction_text = prediction)
+    return render_template("result.html", prediction_text = prediction)
 
 if __name__ == "__main__":
     app.run(debug=True)
