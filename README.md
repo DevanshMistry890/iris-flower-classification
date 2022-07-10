@@ -27,7 +27,7 @@ The Iris Flower Dataset has been used for this purpose, taken from the Kaggle. l
 
 ## Homepage (Responsive)
 <img src = "image\Home.png" width = "700px">
-<img src = "image\Home2.png" width = "700px">
+<img src = "image\Predict.png" width = "700px">
 
 <br><br>
 
