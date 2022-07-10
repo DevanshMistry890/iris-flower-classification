@@ -16,11 +16,11 @@ def ValuePredictor(to_predict_list):
 	result = loaded_model.predict(to_predict)
 	return result[0]
 
-@flask_app.route("/")
+@app.route("/")
 def Home():
     return render_template("index.html")
 
-@flask_app.route("/predict", methods = ["POST"])
+@app.route("/predict", methods = ["POST"])
 def predict():
     float_features = [float(x) for x in request.form.values()]
     to_predict_list = list(float_features)
