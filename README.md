@@ -23,7 +23,7 @@ Life Cycle of implementing machine learning application.
 ## Dataset
 The Iris Flower Dataset has been used for this purpose, taken from the Kaggle. link is below.
 
-- [datset](https://www.kaggle.com/datasets/arshid/iris-flower-dataset)
+- [dataset](https://www.kaggle.com/datasets/arshid/iris-flower-dataset)
 
 ## Homepage (Responsive)
 <img src = "image\Home.png" width = "700px">
